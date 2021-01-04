@@ -169,6 +169,7 @@ if st.sidebar.checkbox("Entire wordcloud",key=4):
 	plt.imshow(wordcloud)
 	plt.xticks([])
 	plt.yticks([])
+    
 	st.pyplot()
 if st.sidebar.checkbox("Match wordcloud",key=3):
 	words = "".join(commentary(str(ids[matchid])))
