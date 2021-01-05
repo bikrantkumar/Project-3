@@ -64,7 +64,7 @@ def remove_html_tags(text):
     return re.sub(clean, '', text)
 
 # bit heavy funtion so had to use it now app works smooth f
-#@st.cache(persist=True)
+@st.cache(persist=True)
 def commentary(mid):
     print(mid)
     c = Cricbuzz()
